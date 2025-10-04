@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Cental.EntityLayer.Entities
 {
-    public class CarCategory
+    public class CarCategory : BaseEntity
     {
-        public int CarCategoriesId { get; set; }
+        public int CarCategoryId { get; set; }
         public string CategoryName { get; set; }
         public List<Car> Cars { get; set; }
     }
