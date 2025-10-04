@@ -20,8 +20,10 @@ namespace Cental.EntityLayer.Entities
         public int Kilometer { get; set; }
         public int BrandId { get; set; }
         public Brand Brand { get; set; } //Navigation Property
+        public int CarCategoryId { get; set; }
+        public CarCategory CarCategory { get; set; } //Navigation Property
+        public List<Review> Reviews { get; set; }
 
-        public CarCategory CarCategory { get; set; }
 
     }
 }
