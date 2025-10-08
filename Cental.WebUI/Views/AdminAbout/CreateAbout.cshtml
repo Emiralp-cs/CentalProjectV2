@@ -1,0 +1,122 @@
+﻿@model CreateAboutDto
+@{
+    ViewData["Title"] = "CreateAbout";
+}
+
+<h3>Create About Page</h3>
+
+<form method="post" asp-action="CreateAbout" asp-controller="AdminAbout">
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="Vision">Vision</label>
+                <input type="text" asp-for="Vision" class="form-control" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="Mission">Mission</label>
+                <input type="text" asp-for="Mission" class="form-control" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="Description1">Up Description</label>
+                <input type="text" asp-for="Description1" class="form-control" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="Description2">Down Description</label>
+                <input type="text" asp-for="Description2" class="form-control" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="StartYear">Founding Year</label>
+                <input type="number" asp-for="StartYear" class="form-control" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="ImageUrl1">Image 1</label>
+                <input type="text" asp-for="ImageUrl1" class="form-control" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="ImageUrl2">Image 2</label>
+                <input type="text" asp-for="ImageUrl2" class="form-control" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="Item1">Item 1</label>
+                <input type="text" asp-for="Item1" class="form-control" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="Item2">Item 2</label>
+                <input type="text" asp-for="Item2" class="form-control" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="Item3">Item 3</label>
+                <input type="text" asp-for="Item3" class="form-control" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="Item4">Item 4</label>
+                <input type="text" asp-for="Item4" class="form-control" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="NameSurname">Name Surname</label>
+                <input type="text" asp-for="NameSurname" class="form-control" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="JobTitle">Job Title</label>
+                <input type="text" asp-for="JobTitle" class="form-control" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="ProfilePicture">Profile Picture</label>
+                <input type="text" asp-for="ProfilePicture" class="form-control" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-12 text-center">
+            <button class="btn btn-outline-primary">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+    </div>
+</form>

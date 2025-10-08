@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Cental.BusinessLayer.Concrete
 {
-    public class AboutManager : GenericManager<About>
+    public class AboutManager : GenericManager<About>,IAboutService
     {
         public AboutManager(IGenericDal<About> genericDal) : base(genericDal)
         {

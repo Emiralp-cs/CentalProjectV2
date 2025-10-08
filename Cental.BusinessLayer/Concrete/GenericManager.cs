@@ -35,12 +35,12 @@ namespace Cental.BusinessLayer.Concrete
 
         public T TGetById(int id)
         {
-            ret
+            return _genericDal.GetById(id);
         }
 
         public void TUpdate(T entity)
         {
-            throw new NotImplementedException();
+            _genericDal.Update(entity);
         }
     }
 }
