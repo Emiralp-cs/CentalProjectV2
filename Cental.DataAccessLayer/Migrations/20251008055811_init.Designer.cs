@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Cental.DataAccessLayer.Migrations
 {
     [DbContext(typeof(CentalContext))]
-    [Migration("20251004134056_init")]
+    [Migration("20251008055811_init")]
     partial class init
     {
         /// <inheritdoc />

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cental.EntityLayer.Entities
+namespace Cental.DataTransferObjectLayer.Dtos.BannerDtos
 {
-    public class Banner : BaseEntity
+    public class UpdateBannerDto
     {
         public int BannerID { get; set; }
         public string Title { get; set; }
